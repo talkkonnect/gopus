@@ -1,0 +1,92 @@
+src/mlp.lo: src/mlp.c /usr/include/stdc-predef.h config.h \
+ /usr/include/math.h \
+ /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
+ /usr/include/arm-linux-gnueabihf/bits/wordsize.h \
+ /usr/include/arm-linux-gnueabihf/bits/long-double.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
+ /usr/include/arm-linux-gnueabihf/bits/types.h \
+ /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
+ /usr/include/arm-linux-gnueabihf/bits/math-vector.h \
+ /usr/include/arm-linux-gnueabihf/bits/libm-simd-decl-stubs.h \
+ /usr/include/arm-linux-gnueabihf/bits/floatn.h \
+ /usr/include/arm-linux-gnueabihf/bits/floatn-common.h \
+ /usr/include/arm-linux-gnueabihf/bits/flt-eval-method.h \
+ /usr/include/arm-linux-gnueabihf/bits/fp-logb.h \
+ /usr/include/arm-linux-gnueabihf/bits/fp-fast.h \
+ /usr/include/arm-linux-gnueabihf/bits/mathcalls-helper-functions.h \
+ /usr/include/arm-linux-gnueabihf/bits/mathcalls.h \
+ /usr/include/arm-linux-gnueabihf/bits/mathinline.h include/opus_types.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h \
+ /usr/include/stdint.h /usr/include/arm-linux-gnueabihf/bits/wchar.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h \
+ include/opus_defines.h include/opus_types.h celt/arch.h \
+ src/tansig_table.h src/mlp.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+/usr/include/math.h:
+
+/usr/include/arm-linux-gnueabihf/bits/libc-header-start.h:
+
+/usr/include/features.h:
+
+/usr/include/arm-linux-gnueabihf/sys/cdefs.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wordsize.h:
+
+/usr/include/arm-linux-gnueabihf/bits/long-double.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
+
+/usr/include/arm-linux-gnueabihf/bits/types.h:
+
+/usr/include/arm-linux-gnueabihf/bits/typesizes.h:
+
+/usr/include/arm-linux-gnueabihf/bits/math-vector.h:
+
+/usr/include/arm-linux-gnueabihf/bits/libm-simd-decl-stubs.h:
+
+/usr/include/arm-linux-gnueabihf/bits/floatn.h:
+
+/usr/include/arm-linux-gnueabihf/bits/floatn-common.h:
+
+/usr/include/arm-linux-gnueabihf/bits/flt-eval-method.h:
+
+/usr/include/arm-linux-gnueabihf/bits/fp-logb.h:
+
+/usr/include/arm-linux-gnueabihf/bits/fp-fast.h:
+
+/usr/include/arm-linux-gnueabihf/bits/mathcalls-helper-functions.h:
+
+/usr/include/arm-linux-gnueabihf/bits/mathcalls.h:
+
+/usr/include/arm-linux-gnueabihf/bits/mathinline.h:
+
+include/opus_types.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/8/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wchar.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdint-intn.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdint-uintn.h:
+
+include/opus_defines.h:
+
+include/opus_types.h:
+
+celt/arch.h:
+
+src/tansig_table.h:
+
+src/mlp.h:
