@@ -1,10 +1,11 @@
+//go:build (amd64 && cgo) || (386 && cgo)
 // +build amd64,cgo 386,cgo
 
 package gopus // import "github.com/talkkonnect/gopus"
 
 // #cgo linux darwin freebsd LDFLAGS: -lm
 //
-// #cgo CFLAGS: -Iopus-1.3.1/include -Iopus-1.3.1/celt -Iopus-1.3.1/silk -Iopus-1.3.1/silk/float -Iopus-1.3.1/silk/fixed
+// #cgo CFLAGS: -Iopus-1.3.1 -Iopus-1.3.1/include -Iopus-1.3.1/celt -Iopus-1.3.1/silk -Iopus-1.3.1/silk/float -Iopus-1.3.1/silk/fixed
 //
 // #include "opus-1.3.1/config.h"
 //
