@@ -1,4 +1,3 @@
-//go:build (amd64 && cgo) || (386 && cgo)
 // +build amd64,cgo 386,cgo
 
 package gopus // import "github.com/talkkonnect/gopus"
@@ -63,6 +62,7 @@ package gopus // import "github.com/talkkonnect/gopus"
 // #include "opus-1.3.1/silk/inner_prod_aligned.c"
 // #include "opus-1.3.1/silk/lin2log.c"
 // #include "opus-1.3.1/silk/log2lin.c"
+// #include "opus-1.3.1/silk/LPC_fit.c"
 // #include "opus-1.3.1/silk/LPC_analysis_filter.c"
 // #include "opus-1.3.1/silk/LPC_inv_pred_gain.c"
 // #undef QA
@@ -87,7 +87,6 @@ package gopus // import "github.com/talkkonnect/gopus"
 // #include "opus-1.3.1/silk/stereo_encode_pred.c"
 // #include "opus-1.3.1/silk/stereo_find_predictor.c"
 // #include "opus-1.3.1/silk/stereo_quant_pred.c"
-//
 // #include "opus-1.3.1/silk/float/apply_sine_window_FLP.c"
 // #include "opus-1.3.1/silk/float/corrMatrix_FLP.c"
 // #include "opus-1.3.1/silk/float/encode_frame_FLP.c"
@@ -99,11 +98,9 @@ package gopus // import "github.com/talkkonnect/gopus"
 // #include "opus-1.3.1/silk/float/LTP_analysis_filter_FLP.c"
 // #include "opus-1.3.1/silk/float/LTP_scale_ctrl_FLP.c"
 // #include "opus-1.3.1/silk/float/noise_shape_analysis_FLP.c"
-// #include "opus-1.3.1/silk/float/prefilter_FLP.c"
 // #include "opus-1.3.1/silk/float/process_gains_FLP.c"
 // #include "opus-1.3.1/silk/float/regularize_correlations_FLP.c"
 // #include "opus-1.3.1/silk/float/residual_energy_FLP.c"
-// #include "opus-1.3.1/silk/float/solve_LS_FLP.c"
 // #include "opus-1.3.1/silk/float/warped_autocorrelation_FLP.c"
 // #include "opus-1.3.1/silk/float/wrappers_FLP.c"
 // #include "opus-1.3.1/silk/float/autocorrelation_FLP.c"
@@ -112,7 +109,6 @@ package gopus // import "github.com/talkkonnect/gopus"
 // #include "opus-1.3.1/silk/float/energy_FLP.c"
 // #include "opus-1.3.1/silk/float/inner_product_FLP.c"
 // #include "opus-1.3.1/silk/float/k2a_FLP.c"
-// #include "opus-1.3.1/silk/float/levinsondurbin_FLP.c"
 // #include "opus-1.3.1/silk/float/LPC_inv_pred_gain_FLP.c"
 // #include "opus-1.3.1/silk/float/pitch_analysis_core_FLP.c"
 // #include "opus-1.3.1/silk/float/scale_copy_vector_FLP.c"
@@ -128,6 +124,7 @@ package gopus // import "github.com/talkkonnect/gopus"
 // #include "opus-1.3.1/celt/celt_encoder.c"
 // OPUS_CUSTOM_NOSTATIC int opus_custom_decoder_get_size(const CELTMode *mode, int channels);
 // OPUS_CUSTOM_NOSTATIC int opus_custom_decoder_init(CELTDecoder *st, const CELTMode *mode, int channels);
+//
 // #include "opus-1.3.1/celt/celt_decoder.c"
 // #include "opus-1.3.1/celt/cwrs.c"
 // #include "opus-1.3.1/celt/entcode.c"
